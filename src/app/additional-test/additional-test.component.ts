@@ -13,7 +13,7 @@ export class AdditionalTestComponent implements OnInit {
   }
   @Output() valCreated = new EventEmitter();
 
-  testArr= [23,45,66];
+
 
   onAddVal(){
     const val={};
