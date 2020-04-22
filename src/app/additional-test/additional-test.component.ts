@@ -13,10 +13,12 @@ export class AdditionalTestComponent implements OnInit {
   }
   @Output() valCreated = new EventEmitter();
 
-
+  dispVal = "";
 
   onAddVal(){
-    const val={};
+    const val={
+      myVal: this.dispVal
+    };
     this.valCreated.emit(val);
   }
 }

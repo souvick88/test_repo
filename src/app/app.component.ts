@@ -1275,7 +1275,11 @@ export class AppComponent  {
       }
    ]
 }
+ storedPosts = [];
 
+ onPostadded(storedPosts){
+   this.storedPosts.push(storedPosts);
+ }
 
 
 }
