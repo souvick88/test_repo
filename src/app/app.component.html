@@ -1,0 +1,16 @@
+<hello name="{{ name }}"></hello>
+<p>
+  Start editing to see some magic happen :)
+</p>
+
+<div *ngIf="ttt > 2">
+  <div *ngFor="let xyz of posts">
+  <p>{{xyz.title}}</p>
+  <p>{{xyz.content}}</p>  
+  </div>
+</div>
+<div >
+  <div *ngFor="let i of addr.items">
+  <div *ngIf="(i.basicInfo.id)>1000">{{i.basicInfo.id}}</div>
+  </div>
+</div>
